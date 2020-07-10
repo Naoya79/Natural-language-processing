@@ -1,0 +1,24 @@
+.site-top {
+  margin: 0;
+}
+
+#text {
+  margin: 0;
+  width: 70px;
+  float:left;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.checkbox label {
+  display: inline-block;
+}
+
+.button_area button {
+  display: inline-block;
+  border-radius:5px;
+}
+
+td {
+  padding: 5px;
+}

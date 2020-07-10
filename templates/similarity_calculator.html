@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Similarity_calculator</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+  <h2 class="site-top">類似度計算（実装途中）</h2><br>
+  <div class="">
+    <p id="text">テキスト</p>
+    <textarea rows="2" cols="80" id="input_text"></textarea>
+  </div>
+  <div><input type="checkbox" id="check" checked="checked">All check ON/OFF</div>
+  <div class="checkbox">
+    <label><input type="checkbox" name="filter" value="1" checked="checked">形容詞</label>
+    <label><input type="checkbox" name="filter" value="2" checked="checked">形容動詞</label>
+    <label><input type="checkbox" name="filter" value="3" checked="checked">感動詞</label>
+    <label><input type="checkbox" name="filter" value="4" checked="checked">副詞</label>
+    <label><input type="checkbox" name="filter" value="5" checked="checked">連体詞</label>
+    <label><input type="checkbox" name="filter" value="6" checked="checked">接続詞</label>
+    <label><input type="checkbox" name="filter" value="7" checked="checked">接頭辞</label>
+    <label><input type="checkbox" name="filter" value="8" checked="checked">接尾辞</label>
+    <label><input type="checkbox" name="filter" value="9" checked="checked">名詞</label>
+    <label><input type="checkbox" name="filter" value="10" checked="checked">動詞</label>
+    <label><input type="checkbox" name="filter" value="11" checked="checked">助詞</label>
+    <label><input type="checkbox" name="filter" value="12" checked="checked">助動詞</label>
+    <label><input type="checkbox" name="filter" value="13" checked="checked">特殊</label>
+  </div>
+  <div class="button_area">
+    <button class="button" value="uniq">追加</button>
+    <button id="reset">リセット</button>
+  </div>
+  <div>
+    <ol id="searchtext"></ol>
+  </div>
+  <div id="resulttext">
+    <table id="resulttable"></table>
+  </div>
+
+  <!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+  <a href="https://developer.yahoo.co.jp/about">
+  <img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn1_125_17.gif" title="Webサービス by Yahoo! JAPAN" alt="Web Services by Yahoo! JAPAN" width="125" height="17" border="0" style="margin:15px 15px 15px 15px"></a>
+  <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../static/js/similarity_calculator.js"></script>
+</body>
+
+</html>
