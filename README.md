@@ -13,7 +13,7 @@ Web開発の練習、APIを利用した開発の経験を目的に作成しま�
 
 - 仮想環境(pipenv)
 - Webフレームワーク(Responder:Pythonライブラリ)
-- WebAPI([Yahooのテキスト解析API](https://developer.yahoo.co.jp/webapi/jlp/))
+- WebAPI([Yahooのテキスト解析API](https://developer.yahoo.co.jp/webapi/jlp/ "Yahooのテキスト解析API"))
 - 非同期通信(Ajax, jQuery:JavaScriptライブラリ)
 
 ### 利用方法
@@ -25,7 +25,7 @@ $ pip install pipenv
 $ pipenv install
 ```
 
-WebAPIを利用するために、YahooのアプリケーションIDが必要になります。お持ちでない方は、Yahoo公式[ご利用ガイド]（https://developer.yahoo.co.jp/start/） を参考に作成してください。
+WebAPIを利用するために、YahooのアプリケーションIDが必要になります。お持ちでない方は、Yahoo公式[ご利用ガイド]（https://developer.yahoo.co.jp/start/ "ご利用ガイド"） を参考に作成してください。
 
 アプリを動かすために、環境変数にアプリケーションIDを設定する必要があります。プロジェクトのルートディレクトリに`.env`ファイルを作成し、以下のようにアプリケーションIDを記述してください。
 
@@ -44,7 +44,7 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 
-コマンドに表示されたリンク(http://127.0.0.1:8080)に移動するとindexページが表示されます。
+コマンドに表示されたリンク(http://127.0.0.1:8080) に移動するとindexページが表示されます。
 
 ![indexページ](https://user-images.githubusercontent.com/67271461/87156305-72fb3d80-c2f7-11ea-93f2-47ba2877cbcd.png)
 
@@ -55,10 +55,15 @@ indexページには、それぞれの機能が実装されたサイトのリン
 
 #### 形態素解析の結果表示機能
 
-segmenter.htmlでは、テキスト欄に文字列を入力し、\[解析\]ボタンを押すことで、テキストが形態素解析された結果が画面に表示されます。\[集計\]ボタンを押すと、各単語の集計数が表示されます。オプションで\[原形\]などのチェックボックスを設定すると、設定した品詞のみ表示されます。  
+segmenter.htmlでは、テキスト欄に文字列を入力し、\[解析\]ボタンを押すことで、テキストが形態素解析された結果が画面に表示されます。オプションで\[原形\]などのチェックボックスを設定すると、設定した品詞のみ表示されます。  
 Ajax通信を行なっているのでページ遷移をせず結果が表示されます。
 
 ![形態素解析結果表示](https://user-images.githubusercontent.com/67271461/87157117-b0ac9600-c2f8-11ea-9634-509e4f5270d3.png)
+
+\[集計\]ボタンを押すと、各単語の集計数が表示されます。 
+Ajax通信を行なっているのでページ遷移をせず結果が表示されます。
+
+![形態素集計結果表示](https://user-images.githubusercontent.com/67271461/87158317-822fba80-c2fa-11ea-87f7-c18e4a7a5d09.png)
 
 #### 日本語係り受け解析の結果表示機能
 
