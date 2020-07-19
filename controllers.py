@@ -37,3 +37,13 @@ class Parser():
         data = await req.media()
         jsonData = models.parser(data)
         resp.media = jsonData
+
+
+class Extract_evaluation():
+    async def on_get(self, req, resp):
+        resp.content = api.template('extract_evaluation.html')
+
+    async def on_post(self, req, resp):
+        data = await req.media()
+        jsonData = models.extract_evaluation(data)
+        resp.media = jsonData

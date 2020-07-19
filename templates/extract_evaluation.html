@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Extract evaluation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+  <h2 class="site-top">評価表現抽出</h2><br>
+  <div class="">
+    <p id="text">テキスト</p>
+    <textarea id="input_text" rows="2" cols="80" placeholder="551蓬莱の豚まんはおいしい" required></textarea>
+  </div>
+  <div class="button_area">
+    <button class="button" value="ma">解析</button>
+  </div>
+  <div id="resulttext"></div>
+
+  <!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+  <a href="https://developer.yahoo.co.jp/about">
+  <img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn1_125_17.gif" title="Webサービス by Yahoo! JAPAN" alt="Web Services by Yahoo! JAPAN" width="125" height="17" border="0" style="margin:15px 15px 15px 15px"></a>
+  <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="../static/js/extract_evaluation.js"></script>
+</body>
+
+</html>

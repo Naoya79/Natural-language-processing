@@ -55,6 +55,26 @@ def parser(data):
         jsonData = "{}"
     return jsonData
 
+def extract_evaluation(data) :
+    query = data["text"]  # 解析する文字列
+    headers = {
+        "Content-Type": "application/json",
+        "User-Agent": "Yahoo AppID: {}".format(APPID),
+    }
+    param_dic = {
+        "id": "1234-1",
+        "jsonrpc": "2.0",
+        "method": "jlp.daservice.parse",
+        "params": {"q": query},
+    }
+    URL = "https://jlp.yahooapis.jp/DAService/V2/parse"
+    res = requests.post(URL, headers=headers, json=param_dic)
+    try:
+        jsonData = json.dumps(res.json())
+    except:
+        jsonData = "{}"
+    return jsonData
+
 
 def yahooapima(filter, results, sentence):
     qs = 'appid=' + APPID + '&response=surface,reading,pos,baseform,feature&filter=' + \
